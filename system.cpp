@@ -134,7 +134,7 @@ main()
         {
             sign_up_menu();
             getch();
-            menu();
+            number = menu();
         }
         else if (number == 2)
         {
@@ -169,7 +169,7 @@ void sign_up_menu()
     bool email_check = check_email(name);
     bool password_check = check_password(password);
     bool role_check = check_user_type(role);
-    if ((email_check == true) && (password_check == true) && (password_check == true))
+    if ((email_check == true) && (password_check == true) && (role_check == true))
     {
         bool decision = isValidName(name);
         if (decision == true)
